@@ -1,3 +1,10 @@
+class App {
+    static main() {
+        let blackJack = new BlackJack();
+    }
+}
+
+
 class BlackJack {
     constructor() {
         this.deck = [];
@@ -187,3 +194,10 @@ class BlackJack {
         }
     }
 }
+    
+
+
+
+App.main();
+
+    
