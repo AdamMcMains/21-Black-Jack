@@ -58,7 +58,7 @@ function showScore(activeplayer){
 }
 
 // Compute Winner Function
-function findwinner(){
+function findWinner(){
     let winner;
 
     if(You['score']<=21){
@@ -157,8 +157,7 @@ function BJdeal(){
     document.querySelector(Dealer['scoreSpan']).textContent = Dealer['score'];
     document.querySelector(Dealer['scoreSpan']).style.color = 'whitesmoke';
 
-    document.querySelector('#command').textContent = "Let's Play";
-    document.querySelector('#command').style.color = 'black';
+    
     }
 }
 
@@ -174,7 +173,7 @@ function BJstand(){
             drawCard(Dealer);
         }
         setTimeout(function(){
-            showresults(findwinner());
+            showresults(findWinner());
             scoreboard();
         }, 1000); 
     }
