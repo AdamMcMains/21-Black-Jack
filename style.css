@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    
 }
 
 html{
@@ -21,13 +21,21 @@ html{
     letter-spacing: .3rem;
 }
 
-
-
+#command {
+    font-weight: 800;
+    font-size: 3.5rem;
+    word-spacing: 1rem;
+    
+}
+@keyframes blinker {
+    25% {
+      opacity: 0;
+    }
+}
 
 .main{
     margin: auto;
     text-align: center;
-    font-family: 'teko', sans-serif;
 }
 
 .row1{
@@ -36,14 +44,14 @@ html{
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
-    border-bottom: rgb(0, 0, 0) solid .5rem;
+    border-bottom: black solid .1rem;
     height: 50rem;
 }
 
 .row1 ,.row2{
     background: url('./cards/table.jpg') no-repeat center center/cover;
     width: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .row1 div{
@@ -53,6 +61,7 @@ html{
 }
 
 .row1 h2{
+    font-family: 'Lobster', cursive;
     font-size: 4rem;
 }
 
@@ -83,7 +92,7 @@ html{
 .buttons button{
     font-size: 2.2rem;
     font-weight: 700;
-    font-family: 'teko', sans-serif;
+    font-family: 'Lobster', cursive;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: .2rem;
@@ -106,9 +115,6 @@ html{
 }
 
 table, th, td{
-    background: url('./cards/table.jpg') no-repeat center center/cover;
-    width: auto;
-    color: rgb(255, 255, 255);
     padding: .5rem;
     border: solid 2px black;
     font-size: 3rem;
@@ -121,6 +127,7 @@ table, th, td{
 table{
     margin: auto;
     margin-bottom: 5rem;
+    background-image: src = './cards/table.jpg';
 }
 
 @media screen and (max-width:740px){
