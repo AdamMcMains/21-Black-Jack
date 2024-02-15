@@ -22,7 +22,6 @@ html{
 }
 
 #command {
-    font-family: ';
     font-weight: 800;
     font-size: 3.5rem;
     word-spacing: 1rem;
@@ -128,6 +127,7 @@ table, th, td{
 table{
     margin: auto;
     margin-bottom: 5rem;
+    background-image: src = './cards/table.jpg';
 }
 
 @media screen and (max-width:740px){
