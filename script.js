@@ -137,16 +137,16 @@ function findWinner(){
 
 function showresults(winner){
     if(winner == You){
-        document.querySelector('#command').textContent = 'You Won!';
-        document.querySelector('#command').style.color = 'green';
+        document.querySelector('#command').textContent = '';
+        document.querySelector('#command').style.color = '';
     }
     else if(winner == Dealer){
-        document.querySelector('#command').textContent = "You Lost!";
-        document.querySelector('#command').style.color = 'red';
+        document.querySelector('#command').textContent = "";
+        document.querySelector('#command').style.color = '';
     }
     else{
-        document.querySelector('#command').textContent = 'Draw!';
-        document.querySelector('#command').style.color = 'orange';
+        document.querySelector('#command').textContent = '';
+        document.querySelector('#command').style.color = '';
     }
 
 }
