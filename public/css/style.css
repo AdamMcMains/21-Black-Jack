@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    background: url('./cards/wood-grain-3.jpg') no-repeat center center/cover;
+    background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
     /* 10px and default 1rem=16px */
 }
 
@@ -18,7 +18,7 @@ html{
     font-size: 8rem;
     word-spacing: 2rem;
     letter-spacing: .3rem;
-    background: url('./cards/wood-grain-3.jpg') no-repeat center center/cover;
+    background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
 }
 
 #command {
@@ -35,7 +35,7 @@ html{
 .main{
     margin: auto;
     text-align: center;
-    background: url('./cards/wood-grain-3.jpg') no-repeat center center/cover;
+    background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
     
 }
 
@@ -50,7 +50,7 @@ html{
 }
 
 .row1 ,.row2{
-    background: url('./cards/table.jpg') no-repeat center center/cover;
+    background: url('/cards/table.jpg') no-repeat center center/cover;
     width: auto;
     color: rgb(0, 0, 0);
 }
@@ -112,12 +112,12 @@ html{
     font-family: 'Lobster', cursive;
     font-size: 4rem;
     color: gold;
-    background: url('./cards/wood-grain-3.jpg') no-repeat center center/cover;
+    background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
 }
 
 .row3{
     margin: auto;
-    background: url('./cards/wood-grain-3.jpg') no-repeat center center/cover;
+    background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
 }
 
 table, th, td{
@@ -133,7 +133,7 @@ table, th, td{
 table{
     margin: auto;
     margin-bottom: 5rem;
-    background-image: src = './cards/table.jpg';
+    background-image: src = '/cards/table.jpg';
 }
 
 @media screen and (max-width:740px){
