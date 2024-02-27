@@ -151,30 +151,5 @@ table{
     background: url('/cards/wood-grain-3.jpg') no-repeat center center/cover;
 }
 
-.login-form{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-.signup-form{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-  
-}
-
-
-
-#email{
-    font-display: white;
-}
-
-#password{
-    color: white;
-}
