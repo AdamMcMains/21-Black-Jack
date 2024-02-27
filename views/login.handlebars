@@ -1,17 +1,36 @@
-<h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-<form class="form login-form">
-  <div class="form-group">
-    <label for="email-login">email:</label>
-    <input class="form-input" type="text" id="email-login" />
-  </div>
-  <div class="form-group">
-    <label for="password-login">password:</label>
-    <input class="form-input" type="password" id="password-login" />
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">login</button>
-  </div>
-</form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
 
-<script src="/js/login.js"></script>
+<body>
+<main id="main-holder">
+  
+    <h1 id="login-header">Login</h1>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="email-login" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-login" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+    <h1 id="signup-header">Sign Up</h1>
+    <form id="signup-form">
+      <input type="text" name="username" id="username-field" class="signup-form-field" placeholder="Username">
+      <input type="text" name="email" id="email-field" class="signup-form-field" placeholder="Email">
+      <input type="password" name="password" id="password-field" class="signup-form-field" placeholder="Password">
+      <input type="submit" value="Sign Up" id="signup-form-submit">
+  
+ 
+</div>
+</main>
+</body>
+
+
+    
+<script src="./js/login.js"></script>

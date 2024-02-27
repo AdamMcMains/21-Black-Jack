@@ -25,7 +25,7 @@ function dealYou(activeplayer){
 function dealDealer(activeplayer){
     let facedownCard = document.createElement('img');
     facedownCard.setAttribute("id", "faceDownCard");
-    facedownCard.src = `./cards/Back.png`;
+    facedownCard.src = `/cards/faceDown.png`;
     document.querySelector(activeplayer['div']).appendChild(facedownCard);
     drawCard(activeplayer);
 }
@@ -43,7 +43,7 @@ function drawCard(activeplayer) {
     const currentCard = BJgame['cards'].splice(randomNumber, 1);
     let card = document.createElement('img');
     card.setAttribute("class", "faceUpCard");
-    card.src = `./cards/${currentCard}.png`;
+    card.src = `/cards/${currentCard}.png`;
     document.querySelector(activeplayer['div']).appendChild(card);
     
     
@@ -59,7 +59,7 @@ function revealFacedown(){
     const randomNumber = Math.floor(Math.random() * (BJgame['cards'].length));
     const currentCard = BJgame['cards'].splice(randomNumber, 1);
     let facedownCard = document.getElementById("faceDownCard");
-    facedownCard.src = `./cards/${currentCard}.png`;
+    facedownCard.src = `/cards/${currentCard}.png`;
 
     updateScore(currentCard, Dealer);
 
