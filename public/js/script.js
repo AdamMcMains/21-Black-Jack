@@ -25,7 +25,7 @@ function dealYou(activeplayer){
 function dealDealer(activeplayer){
     let facedownCard = document.createElement('img');
     facedownCard.setAttribute("id", "faceDownCard");
-    facedownCard.src = `/cards/faceDown.png`;
+    facedownCard.src = `/cards/BACK.png`;
     document.querySelector(activeplayer['div']).appendChild(facedownCard);
     drawCard(activeplayer);
 }
