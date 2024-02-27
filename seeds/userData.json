@@ -1,7 +1,9 @@
 [
     {
       "user_name": "Sal",
-      "wins": "2"
+      "wins": "2",
+      "email" : "donttrip@donttrip.com",
+      "password": "donttrip"
     },
     {
       "user_name": "Lernantino",
