@@ -50,7 +50,7 @@ router.post('/logout', (req, res) => {
 router.post('/signup', async (req, res) => {
   try {
     const dbUserData = await User.create({
-      username: req.body.username,
+      name: req.body.username,
       email: req.body.email,
       password: req.body.password,
     });
@@ -58,10 +58,11 @@ router.post('/signup', async (req, res) => {
     // TODO: Set up sessions with the 'loggedIn' variable
     req.session.save(() => {
       // TODO: Set the 'loggedIn' session variable to 'true'
-      if(req.session.loggedIn) {
-      req.session.loggedIn = true;
+      req.session.user_id = dbUserData.id;
+      if(req.session.logged_in) {
+      req.session.logged_in = true;
       }else {
-        req.session.loggedIn = true;
+        req.session.logged_in = true;
       }
       res.status(200).json(dbUserData);
     });
