@@ -24,36 +24,36 @@ const loginFormHandler = async (event) => {
 
 
   
-  // document
-  //   .querySelector('#signup-form')
-  //   .addEventListener('submit', signupFormHandler);
-  //   const signupFormHandler = async (event) => {
-  //     event.preventDefault();
+
+    const signupFormHandler = async (event) => {
+      event.preventDefault();
     
-  //     // Gather the data from the form elements on the page
-  //     const email = document.querySelector('#email-signup').value.trim();
-  //     const password = document.querySelector('#password-signup').value.trim();
-  //     const username = document.querySelector('#username-signup').value.trim();
+      // Gather the data from the form elements on the page
+      const email = document.querySelector('#email-signup').value.trim();
+      const password = document.querySelector('#password-signup').value.trim();
+      const username = document.querySelector('#username-signup').value.trim();
     
-  //     //password send
-  //     if (email && password) {
-  //       const response = await fetch('/api/users/signup', {
-  //         method: 'POST',
-  //         body: JSON.stringify({ username, email, password }),
-  //         headers: { 'Content-Type': 'application/json' },
-  //       });
+      //password send
+      if (username && email && password) {
+        const response = await fetch('/api/users/signup', {
+          method: 'POST',
+          body: JSON.stringify({ username, email, password }),
+          headers: { 'Content-Type': 'application/json' },
+        });
     
-  //       if (response.ok) {
-  //         document.location.replace('/');
-  //       } else {
-  //         alert('Failed to log in');
-  //       }
-  //     }
-  //   };
+        if (response.ok) {
+          document.location.replace('/');
+        } else {
+          alert('Failed to log in');
+        }
+      }
+    };
     
   
   
-    
+    document
+    .querySelector('#signup-form')
+    .addEventListener('submit', signupFormHandler);
     document
       .querySelector('#login-form')
       .addEventListener('submit', loginFormHandler);
