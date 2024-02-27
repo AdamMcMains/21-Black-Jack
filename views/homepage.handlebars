@@ -1,4 +1,17 @@
-<h1 class="title">BLACK JACK</h1>
+<h1 class="title">
+    {{#if logged_in}}
+        <nav>
+        <button class="btn" id="logout">logout</button>
+        <a href = "leaderboard.handlebars">
+        <button class = "btn" id = "leaderboardButton"> Leaderboard </button>
+        </a>
+        </nav>
+    {{/if}}
+    
+
+    BLACK JACK
+</h1>
+    
     <div class="main">
         <h2><span id="command"></span></h2>
         <div class="row1">
@@ -32,11 +45,7 @@
                 </tr>
             </table>
         </div>
-         {{#if logged_in}}
-        <nav>
-        <button class="btn" id="logout">logout</button>
-        </nav>
-        {{/if}}
+        
     </div>
 
 
