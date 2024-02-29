@@ -1,1 +1,32 @@
-# Bootcamp-Project-2
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 21 Black Jack
+
+## Description
+
+21 Black Jack is an interactive application that allows you to easily jump in and play a game of Black Jack.
+
+## Installation
+
+there are no installation requirements. 
+
+## Usage
+
+(deployed application URL through heroku goes here)
+
+## Credits
+
+## License
+
+MIT License
+
+## Features
+
+## How To Contribute
+
+## Tests
+
+## Questions
+
+AdamMcMains
+
+adammcmains@gmail.com
