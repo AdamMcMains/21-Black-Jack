@@ -64,6 +64,8 @@ function revealFacedown(){
     updateScore(currentCard, Dealer);
 
     showScore(Dealer);
+
+    gameStatus = "finished"
 }
 
 function updateScore(currentcard, activeplayer){
@@ -171,14 +173,35 @@ function newGame(){
 document.querySelector('#hit').addEventListener('click', BJhit);
 
 function BJhit(){
-        if(You['score']<=21){
+        if(You['score']<=21 && gameStatus != "finished"){
             drawCard(You);
+            if(You['score'] == 21){
+                gameStatus = "finished"
+                revealFacedown();
+                findWinner();
+                scoreboard();
+            }
+            else if (You['score'] > 21){
+                gameStatus = "finished"
+                revealFacedown();
+                findWinner();
+                scoreboard();
+            };
+        }
+        else{
+            alert('cannot hit after the hand has ended, start a new game first')
         }
     }
 
 document.querySelector('#deal').addEventListener('click', function(){
     if (gameStatus == "finished"){
         initDeal();
+        if(You['score'] == 21){
+            gameStatus = "finished"
+                revealFacedown();
+                findWinner();
+                scoreboard();
+        }
     }
     else if (gameStatus == "inProgress"){
         alert("Finish current game first")
@@ -194,8 +217,8 @@ document.querySelector('#stand').addEventListener('click', BJstand)
 
 
 function BJstand(){
-    if(You['score'] == 0){
-        alert('Start the game first');
+    if(You['score'] == 0 || gameStatus == "finished"){
+        alert('Finish your current game first, Or start a New Game');
     }
     else{
         revealFacedown();
@@ -203,17 +226,8 @@ function BJstand(){
         scoreboard();
         document.querySelector('#deal').textContent = 'New Game'
         gameStatus = "finished"
-    
     }
 }
 
-document.querySelector('#fold').addEventListener('click', BJfold)
 
-function BJfold(){
-        document.querySelector('#command').textContent = "You Folded";
-        document.querySelector('#command').style.color = 'Orange';
-
-        document.querySelector('#deal').textContent = 'New Game'
-        gameStatus = "finished"
-}
 
