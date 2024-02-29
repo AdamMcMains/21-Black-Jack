@@ -3,7 +3,7 @@
 
 ## Description
 
-21 Black Jack is an interactive application that allows you to easily jump in and play a game of Black Jack.
+21 Black Jack is an interactive application that allows you to easily jump in and play a game of Black Jack. 
 
 ## Installation
 
@@ -14,6 +14,9 @@ there are no installation requirements.
 (deployed application URL through heroku goes here)
 
 ## Credits
+Adam McMains
+Jeremy Sevilla
+Steven Lestrade
 
 ## License
 
@@ -30,3 +33,7 @@ MIT License
 AdamMcMains
 
 adammcmains@gmail.com
+
+Jeremy Sevilla
+
+jrsevi@gmail.com
