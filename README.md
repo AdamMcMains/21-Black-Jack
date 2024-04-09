@@ -17,8 +17,8 @@ there are no installation requirements.
 
 ## Credits
 
- Jrsevi
- Slest12
+ Jrsevi  
+ Slest12  
 
 ## License
 
