@@ -46,10 +46,6 @@ SOFTWARE.
 
 ## Features
 
-## How To Contribute
-
-## Tests
-
 ## Questions
 
 AdamMcMains
