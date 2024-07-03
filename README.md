@@ -1,13 +1,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # 21 Black Jack
 
-![image](https://github.com/AdamMcMains/21-Black-Jack/assets/148840663/5a1fbd02-aed8-4723-a733-7bf5af685757)
-
-![21 blackjack table](https://github.com/AdamMcMains/21-Black-Jack/assets/148840663/8161c1f4-b61e-41db-a51e-93ec955a91bf)
-
 ## Description
 
 21 Black Jack is an interactive application that allows you to easily jump in and play a game of Black Jack.
+
+![image](https://github.com/AdamMcMains/21-Black-Jack/assets/148840663/5a1fbd02-aed8-4723-a733-7bf5af685757)
+
+![21 blackjack table](https://github.com/AdamMcMains/21-Black-Jack/assets/148840663/8161c1f4-b61e-41db-a51e-93ec955a91bf)
 
 ## Installation
 
